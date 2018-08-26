@@ -9,6 +9,7 @@ class MusicFormatter {
         this.i = 0;
         this.first = db.items[0];
         this.clean_db = [];
+        this.url_list = [];
     }
 
     formatDB()
@@ -35,6 +36,8 @@ class MusicFormatter {
             clean_entry.artist_names = temp_artists.substring(0, temp_artists.length-2);
 
             this.clean_db.push(clean_entry);
+            this.url_list.push(clean_entry.album_thumbnail);
+            this.url_list.push(<br/>);
             index++;
         }
     }
