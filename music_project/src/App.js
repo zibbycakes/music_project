@@ -22,7 +22,7 @@ class App extends Component {
         <tr key={entry.index}>
           <th scope="row">{entry.index}</th>
           <td><img src={entry.album_thumbnail}/></td>
-          <td>{entry.track_title}<br />{entry.album_thumbnail.substring(entry.album_thumbnail.length-40)}</td>
+          <td>{entry.track_title}<br />{entry.album_thumbnailL.substring(entry.album_thumbnailL.length-40)}</td>
           <td>{entry.artist_names}</td>
           <td>{entry.album_title}</td>
           <td>{entry.year}</td>
